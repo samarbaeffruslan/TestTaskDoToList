@@ -8,8 +8,7 @@ import com.example.core.db.entites.TaskEntity
 @Database(
     entities = [
         TaskEntity::class
-    ],
-    version = 1
+    ], version = 2
 )
 abstract class TaskDB: RoomDatabase(),TaskDBContract {
 }
