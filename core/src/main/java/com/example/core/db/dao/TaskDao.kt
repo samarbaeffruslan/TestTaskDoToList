@@ -2,20 +2,20 @@ package com.example.core.db.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.core.db.entites.Task
+import com.example.core.db.entites.TaskEntity
 
 @Dao
 interface TaskDao {
 
     @Query("SELECT * FROM task_table")
-    fun getTasks(): LiveData<List<Task>>
+    fun getTasks(): LiveData<List<TaskEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(task: Task)
+    suspend fun insert(taskEntity: TaskEntity)
 
     @Update
-    suspend fun update(task: Task)
+    suspend fun update(taskEntity: TaskEntity)
 
     @Delete
-    suspend fun delete(task: Task)
+    suspend fun delete(taskEntity: TaskEntity)
 }

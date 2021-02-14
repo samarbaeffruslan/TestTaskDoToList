@@ -1,3 +1,5 @@
+include ':additemtask'
+include ':tasklist'
 include ':main'
 include ':core'
 include ':app'

@@ -5,11 +5,9 @@ import androidx.room.PrimaryKey
 
 
 @Entity(tableName = "task_table")
-data class Task(
+data class TaskEntity(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
     val name: String,
-    val important: Boolean = false,
     val completed: Boolean = false,
-    //val created: Long =
 )
