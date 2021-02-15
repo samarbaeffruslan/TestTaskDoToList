@@ -38,7 +38,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="12dp"
-            android:maxWidth="300dp"
+            android:maxWidth="240dp"
             android:textColor="@android:color/black"
             android:textSize="14dp"
             app:layout_constraintBottom_toBottomOf="parent"
